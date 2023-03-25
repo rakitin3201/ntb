@@ -2,11 +2,11 @@
 
 @section('content')
 <div class="main">
-    <div style="background-image: url('images/img9.jpg'); background-size: 100%; background-repeat: no-repeat;">
+    <div style="background-image: url('images/img1.jpg'); background-size: 100%; background-repeat: no-repeat;">
         <div class="container">
             <div class="row align-items-md-stretch">
                 <div class="col-md-6 mb-3">
-                    <div class="h-100 p-5">
+                    <div class="h-100 p-5 text-white">
                         <h1>COMPAGNIE DE <span class="fw-bolder fs-1">TRANSIT-DOUANE</span></h1>
                         <p>Nouramane Transit Burkina SA est une societe specialisé dans le transit, transport, consignation, declaration en Douane dirigée par une equipe jeune et dynamique. Elle a eu son agrement de commissionnaire agrée en douane depuis 2007 ce qui demontre une certaine experience confirmé dans le domaine.</p>
                         <a href="{{ route('about') }}" class="btn btn-sm btn-primary">Lire plus</a>
