@@ -18,10 +18,10 @@
 
         <div class="col-md-8 mb-3">
             <div class="card shadow-sm">
-                <div class="card-header">{{ __('Dashboard') }}</div>
+                <div class="card-header">{{ __('Domaine') }}</div>
 
                 <div class="card-body">
-                    {{ __('You are logged in!') }}
+                    {{ __('Section en cours de developppement') }}
                 </div>
             </div>
         </div>

@@ -3,6 +3,14 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\WelcomeController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\AboutController;
+use App\Http\Controllers\ServiceController;
+use App\Http\Controllers\ContactController;
+use App\Http\Controllers\DomaineController;
+use App\Http\Controllers\PrestationController;
+use App\Http\Controllers\PolitiqueDeConfidentialiteController;
+use App\Http\Controllers\ProtectionDesDonneesController;
+use App\Http\Controllers\DeclarationDeConformiteController;
 
 use App\Http\Controllers\LogoutController;
 
@@ -22,23 +30,23 @@ Route::middleware(['throttle:60, 1'])->group(function () {
 
     Route::get('/Acceuil', [WelcomeController::class, 'index'])->name('acceuil');
 
-    Route::get('/About', [WelcomeController::class, 'index'])->name('about');
+    Route::get('/About', [AboutController::class, 'index'])->name('about');
 
-    Route::get('/Service', [WelcomeController::class, 'index'])->name('service');
+    Route::get('/Service', [ServiceController::class, 'index'])->name('service');
 
-    Route::get('/Contact', [WelcomeController::class, 'index'])->name('contact');
+    Route::get('/Contact', [ContactController::class, 'index'])->name('contact');
 
-    Route::get('/Domaine', [WelcomeController::class, 'index'])->name('domaine');
+    Route::get('/Domaine', [DomaineController::class, 'index'])->name('domaine');
 
-    Route::get('/Prestation', [WelcomeController::class, 'index'])->name('prestation');
+    Route::get('/Prestation', [PrestationController::class, 'index'])->name('prestation');
 
-    Route::get('/Confidentialite', [WelcomeController::class, 'index'])->name('confidentialite');
+    Route::get('/politique-de-confidentialité', [PolitiqueDeConfidentialiteController::class, 'index'])->name('politique-de-confidentialite');
 
-    Route::get('/Protection', [WelcomeController::class, 'index'])->name('protection');
+    Route::get('/protection-des-donneés', [ProtectionDesDonneesController::class, 'index'])->name('protection-des-donnees');
 
-    Route::get('/Conformite', [WelcomeController::class, 'index'])->name('conformite');
+    Route::get('/declaration-de-conformité', [DeclarationDeConformiteController::class, 'index'])->name('declaration-de-conformite');
 
-    Route::post('/Recherche', [WelcomeController::class, 'index'])->name('search');
+    Route::post('/recherche', [WelcomeController::class, 'index'])->name('recherche');
 });
 
 Auth::routes();

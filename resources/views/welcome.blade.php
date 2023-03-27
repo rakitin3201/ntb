@@ -23,7 +23,7 @@
                                 Transfert d'un bureau de douanes interieure vers un  bureau de sortie. 
                             </div>
                             <div class="text-end">
-                                <a href="http://" class="btn btn-sm btn-light">En savoir plus</a>
+                                <a href="{{ route('acceuil') }}" class="btn btn-sm btn-light">En savoir plus</a>
                             </div>
                         </div>
                     </div>
@@ -36,7 +36,7 @@
                                 Transfert d'un bureau de douanes interieure vers un  bureau de sortie
                             </div>
                             <div class="text-end">
-                                <a href="http://" class="btn btn-sm btn-light">En savoir plus</a>
+                                <a href="{{ route('acceuil') }}" class="btn btn-sm btn-light">En savoir plus</a>
                             </div>
                         </div>
                     </div>
@@ -49,7 +49,7 @@
                                 Transfert d'un bureau de douanes interieure vers un  bureau de sortie
                             </div>
                             <div class="text-end">
-                                <a href="http://" class="btn btn-sm btn-light">En savoir plus</a>
+                                <a href="{{ route('acceuil') }}" class="btn btn-sm btn-light">En savoir plus</a>
                             </div>
                         </div>
                     </div>

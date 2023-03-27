@@ -1,15 +1,12 @@
 <header class="p-1" style="background-color: rgb(41, 64, 145)">
     <div class="container">
         <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-            <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
-                <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg>
-            </a>
 
             <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
                 {{-- / --}}
             </ul>
 
-            <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3 d-flex" role="search" method="POST" action="{{ route('search') }}">
+            <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3 d-flex" role="search" method="POST" action="{{ route('recherche') }}">
                 {{ csrf_field() }}
                 <input class="form-control form-control-sm me-2" type="search" placeholder="Recherche" aria-label="Search">
                 <button class="btn btn-sm btn-outline-light" type="submit">Search</button>
@@ -19,7 +16,6 @@
 </header>
 
 <nav class="navbar navbar-expand-lg bg-light shadow-sm" aria-label="Offcanvas navbar large">
-{{-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Offcanvas navbar large"> --}}
     <div class="container">
         <a class="navbar-brand" href="{{ url('/') }}">
             <img class="rounded-circle" width="50px" height="50px" src="{{ asset('images/img1.jpg') }}" alt="logo">

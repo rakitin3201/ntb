@@ -1,5 +1,4 @@
 <footer style="background-color: rgb(165, 165, 165);">
-{{-- <footer style="background-color: rgb(177, 178, 182);"> --}}
     <div class="container py-5">
         <div class="row">
             <div class="col-6 col-md">
@@ -14,9 +13,9 @@
             <div class="col-6 col-md">
                 <h5 class="fw-bold">Informations</h5>
                 <ul class="list-unstyled text-small">
-                    <li><a class="link-secondary" href="{{ route('confidentialite') }}">Politique de confidentialité</a></li>
-                    <li><a class="link-secondary" href="{{ route('protection') }}">Protection des données</a></li>
-                    <li><a class="link-secondary" href="{{ route('conformite') }}">Declaration de conformité</a></li>
+                    <li><a class="link-secondary" href="{{ route('politique-de-confidentialite') }}">Politique de confidentialité</a></li>
+                    <li><a class="link-secondary" href="{{ route('protection-des-donnees') }}">Protection des données</a></li>
+                    <li><a class="link-secondary" href="{{ route('declaration-de-conformite') }}">Declaration de conformité</a></li>
                 </ul>
             </div>
             <div class="col-6 col-md">
